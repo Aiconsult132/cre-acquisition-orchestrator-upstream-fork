@@ -4,6 +4,33 @@ All notable changes to this project are documented here.
 
 This project follows the spirit of [Keep a Changelog](https://keepachangelog.com/) and uses semantic versioning for tagged public releases.
 
+## [2.9.0](https://github.com/ahacker-1/cre-acquisition-orchestrator/compare/v2.8.0...v2.9.0) (2026-05-28)
+
+
+### Features
+
+* **dashboard:** make "New Deal" a document-drop flow, not a manual form ([add6199](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/add619966211f23e55ae0cc7ff54d5bd7a3d3f4f))
+* **dashboard:** reduce first-run onboarding friction ([843d659](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/843d659b4c315e7cfed528d06add1d99120bc650))
+* **redesign:** advanced drawer a11y — role=dialog/aria-modal + Esc-close + body scroll-lock (Phase 4/D1,D4) ([2e9b9f1](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/2e9b9f169738abf1161b11a3a8446ae62ebfad11))
+* **redesign:** agent dispatch + summon wiring — useAgentDispatch (codex --agent), intentRouting, per-agent view selector; wire rail/command-bar/chip → AgentPanel; agent-panel e2e (Phase 3/A1,A2,A4,A5) ([ff33dd3](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/ff33dd3664cdfcfca8603b42941ac9f74fafd7a9))
+* **redesign:** AgentPanel — slide-in summon/watch/read/re-task panel with dialog a11y (Phase 3/A3) ([0a95ca3](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/0a95ca3909c23f227fa433686d3db43d326b930a))
+* **redesign:** front door — drop-first hero, remove outcome-chip/mission-goal friction (Phase 2/I4,I5) ([db5a8aa](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/db5a8aa6a1e8a0ebbbb158094843e17bcb64b020))
+* **redesign:** intake backend — auto-apply trusted fields by default + inline operator override w/ provenance+audit (Phase 2/I1,I2b) ([42f8313](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/42f8313978157a0985077130585f84ad2412c8ad))
+* **redesign:** intake stage — auto-filled DealRecord + inline edit + flags; deep review behind disclosure; fix intake e2e for auto-apply (Phase 2/I2,I3,I6) ([598be0a](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/598be0adfc675d4c6e5b4a836ee8753ea169aad8))
+* **redesign:** lifecycle spine — stageModel (TDD, 8 checks) + LifecycleSpine component (Phase 1b) ([c0762dd](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/c0762dd138bbd7807c91b0c9ddeac4c6d6a2ef30))
+* **redesign:** mount WorkspaceFrame in DealWorkspace — spine-driven stages + Advanced drawer; retarget guided tour (Phase 1d/F9) ([512aac8](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/512aac8acf60c5cfa7ad5da10e7cf24d129b7e35))
+* **redesign:** right rail + command bar — LiveFeed, TeamRail, CommandBar + commandModel (Phase 1c) ([8aa45c8](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/8aa45c85af5f89901f74ba3b46df8f375422079f))
+* **redesign:** visual foundation — cre-live token + brand type scale & status vars (Phase 1a) ([39fc91d](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/39fc91d3b055fac043b0f22f9ace405cbdf7ab25))
+* **redesign:** WorkspaceFrame shell composing spine + stage outlet + rail + command bar (Phase 1d part 1) ([3abe43f](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/3abe43f6eea18e51d92bc508bace37dac21a4a24))
+
+
+### Bug Fixes
+
+* **eval:** preserve negative sign when extracting IRR / equity multiple ([5780460](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/5780460d9e396c90b659b29c545ddccba4ca7ebc))
+* **redesign:** auto-extract on upload (drop→auto-fill end-to-end) + filter non-applyable fields from the record; realign intake e2e (Phase 2 gate fixes) ([bc1b4a6](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/bc1b4a6e09016b239954ab12446ddc8d41209686))
+* **redesign:** Step 2.5 review remediation — intake team rail, elapsed timer, task echo, honest copy ([732a772](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/732a7722e3b6a91e6b822e982ee2bef039c7f9e7))
+* **redesign:** surface failed live agent-dispatch notice (production-guardian W1) ([5dccbe6](https://github.com/ahacker-1/cre-acquisition-orchestrator/commit/5dccbe65b03ca9638544a26fa1d3da0b5f6d37b9))
+
 ## [2.8.5](https://github.com/ahacker-1/cre-acquisition-orchestrator/compare/v2.8.0...v2.8.5) (2026-05-27)
 
 Redesigns the operator dashboard into one living "deal space" — a persistent frame you drive by
